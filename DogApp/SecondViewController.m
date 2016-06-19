@@ -1,11 +1,4 @@
-//
-//  SecondViewController.m
-//  DogApp
-//
-//  Created by pgs on 6/19/16.
-//  Copyright (c) 2016 com.nikola. All rights reserved.
-//
-
+#import "FirstViewController.h"
 #import "SecondViewController.h"
 
 @interface SecondViewController ()
@@ -16,12 +9,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+-(void) viewWillAppear : (BOOL) animated {
+    [super viewWillAppear:animated];
+        
+    
+    
+    self.breed.text = self.dog.breed;
+    self.desc.text=  self.dog.desc;
+    
+    
+
+    
+}
+
+-(IBAction)back:(id)sender {
+    
+    FirstViewController *secondVC = [self.storyboard instantiateViewControllerWithIdentifier:
+                                      @"FirstViewController"];
+    
+    [self presentViewController:secondVC animated:YES completion:nil];
+
 }
 
 @end

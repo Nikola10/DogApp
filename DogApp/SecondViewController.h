@@ -1,14 +1,16 @@
-//
-//  SecondViewController.h
-//  DogApp
-//
-//  Created by pgs on 6/19/16.
-//  Copyright (c) 2016 com.nikola. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
+#import "Dog.h"
+
 
 @interface SecondViewController : UIViewController
+
+@property IBOutlet UILabel *breed;
+
+@property IBOutlet UITextView* desc;
+
+@property Dog* dog;
 
 
 @end

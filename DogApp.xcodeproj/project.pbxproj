@@ -15,6 +15,8 @@
 		87307F1A1D16A6CC004D5198 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87307F191D16A6CC004D5198 /* Images.xcassets */; };
 		87307F1D1D16A6CC004D5198 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87307F1B1D16A6CC004D5198 /* LaunchScreen.xib */; };
 		87307F291D16A6CC004D5198 /* DogAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87307F281D16A6CC004D5198 /* DogAppTests.m */; };
+		87307F341D16A81B004D5198 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 87307F331D16A81B004D5198 /* Dog.m */; };
+		87307F371D16A89B004D5198 /* DogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87307F361D16A89B004D5198 /* DogCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		87307F221D16A6CC004D5198 /* DogAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87307F271D16A6CC004D5198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87307F281D16A6CC004D5198 /* DogAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogAppTests.m; sourceTree = "<group>"; };
+		87307F321D16A81B004D5198 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		87307F331D16A81B004D5198 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		87307F351D16A89B004D5198 /* DogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DogCell.h; sourceTree = "<group>"; };
+		87307F361D16A89B004D5198 /* DogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DogCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				87307F191D16A6CC004D5198 /* Images.xcassets */,
 				87307F1B1D16A6CC004D5198 /* LaunchScreen.xib */,
 				87307F091D16A6CC004D5198 /* Supporting Files */,
+				87307F321D16A81B004D5198 /* Dog.h */,
+				87307F331D16A81B004D5198 /* Dog.m */,
+				87307F351D16A89B004D5198 /* DogCell.h */,
+				87307F361D16A89B004D5198 /* DogCell.m */,
 			);
 			path = DogApp;
 			sourceTree = "<group>";
@@ -226,6 +236,8 @@
 			files = (
 				87307F151D16A6CC004D5198 /* SecondViewController.m in Sources */,
 				87307F0F1D16A6CC004D5198 /* AppDelegate.m in Sources */,
+				87307F371D16A89B004D5198 /* DogCell.m in Sources */,
+				87307F341D16A81B004D5198 /* Dog.m in Sources */,
 				87307F121D16A6CC004D5198 /* FirstViewController.m in Sources */,
 				87307F0C1D16A6CC004D5198 /* main.m in Sources */,
 			);
@@ -424,6 +436,7 @@
 				87307F2E1D16A6CC004D5198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87307F2F1D16A6CC004D5198 /* Build configuration list for PBXNativeTarget "DogAppTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +445,7 @@
 				87307F311D16A6CC004D5198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

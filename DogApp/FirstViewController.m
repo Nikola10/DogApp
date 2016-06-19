@@ -1,12 +1,8 @@
-//
-//  FirstViewController.m
-//  DogApp
-//
-//  Created by pgs on 6/19/16.
-//  Copyright (c) 2016 com.nikola. All rights reserved.
-//
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "Dog.h"
+#import "DogCell.h"
 
 @interface FirstViewController ()
 
@@ -16,12 +12,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+
+- (void)viewWillAppear:(BOOL) animated {
+    [super viewWillAppear:animated];
+    
+    self.dogs = [[NSMutableArray alloc] init];
+    
+    Dog* dog = [[Dog alloc] init];
+    dog.breed = @"Bull dog";
+    dog.desc = @"Izvanredan pas";
+    [self.dogs addObject:dog];
+    
+    self.table.delegate = self;
+    self.table.dataSource = self;
+    [self.table reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dogs count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    DogCell *cell = ((DogCell *)[tableView dequeueReusableCellWithIdentifier:@"dogCell"]);
+    
+   cell.breed.text = ((Dog*)[self.dogs objectAtIndex:indexPath.row]).breed;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SecondViewController *secondVC = [self.storyboard instantiateViewControllerWithIdentifier:
+                                      @"SecondViewController"];
+    
+    secondVC.dog = [self.dogs objectAtIndex:indexPath.row];
+    
+    
+    [self presentViewController:secondVC animated:YES completion:nil];
+    
+}
+
+
+
 @end
+

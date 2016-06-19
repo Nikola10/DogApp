@@ -1,14 +1,11 @@
-//
-//  FirstViewController.h
-//  DogApp
-//
-//  Created by pgs on 6/19/16.
-//  Copyright (c) 2016 com.nikola. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property IBOutlet UITableView * table;
+
+@property NSMutableArray * dogs;
 
 
 @end

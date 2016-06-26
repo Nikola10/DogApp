@@ -6,6 +6,11 @@
 
 @property NSString* breed;
 @property NSString* desc;
+@property NSString* majka;
+@property NSString* otac;
+@property NSString* titula;
+@property NSString* slika;
+
 
 
 @end

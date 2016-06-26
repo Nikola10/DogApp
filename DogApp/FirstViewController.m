@@ -25,9 +25,32 @@
     self.dogs = [[NSMutableArray alloc] init];
     
     Dog* dog = [[Dog alloc] init];
-    dog.breed = @"Bull dog";
+    dog.breed = @"Cune iron line";
     dog.desc = @"Izvanredan pas";
+    dog.otac = @"Mupi";
+    dog.majka = @"Lana";
+    dog.titula = @"Grand shampion";
+    dog.slika = @"Dog";
     [self.dogs addObject:dog];
+    
+    dog = [[Dog alloc] init];
+    dog.breed = @"Mirko iron line";
+    dog.desc = @"Izvanredan pas";
+    dog.otac = @"Mupi";
+    dog.majka = @"Lana";
+    dog.titula = @"Grand shampion";
+    dog.slika = @"cunejunior";
+    [self.dogs addObject:dog];
+    
+    dog = [[Dog alloc] init];
+    dog.breed = @"Buki iron line";
+    dog.desc = @"Izvanredan pas";
+    dog.otac = @"Mupi";
+    dog.majka = @"Lana";
+    dog.titula = @"Grand shampion";
+    dog.slika = @"Dog";
+    [self.dogs addObject:dog];
+    
     
     self.table.delegate = self;
     self.table.dataSource = self;

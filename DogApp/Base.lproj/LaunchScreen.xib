@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,25 +11,17 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="  Copyright (c) 2016 com.nikola. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="IFZ-6b-ZdC">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="IFZ-6b-ZdC" userLabel="image">
+                    <rect key="frame" x="0.0" y="-8" width="480" height="439"/>
+                    <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="IFZ-6b-ZdC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-20" id="Fg4-Lv-6Fs"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="IFZ-6b-ZdC" secondAttribute="bottom" constant="-20" id="Ld4-uw-oWC"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstItem="IFZ-6b-ZdC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-20" id="Niy-iJ-hfo"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstAttribute="trailing" secondItem="IFZ-6b-ZdC" secondAttribute="trailing" constant="-20" id="buL-gA-c1T"/>
+                <constraint firstItem="IFZ-6b-ZdC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bL8-bw-elU"/>
+                <constraint firstItem="IFZ-6b-ZdC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jHS-iL-DzT"/>
+                <constraint firstItem="IFZ-6b-ZdC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-8" id="lH8-nk-6pc"/>
+                <constraint firstAttribute="trailing" secondItem="IFZ-6b-ZdC" secondAttribute="trailing" constant="10" id="sYI-ip-USB"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -36,6 +29,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Dog" width="236" height="311"/>
+        <image name="Dog" width="960" height="748"/>
     </resources>
 </document>

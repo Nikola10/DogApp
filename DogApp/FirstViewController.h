@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface FirstViewController : UIScrollView<UITableViewDataSource, UITableViewDelegate>
 
 @property IBOutlet UITableView * table;
 

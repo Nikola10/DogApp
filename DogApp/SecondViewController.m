@@ -27,6 +27,8 @@
     self.majka.text = self.dog.majka;
     self.otac.text = self.dog.otac;
     self.titula.text = self.dog.titula;
+    self.tezina.text = self.dog.tezina;
+   
     
     [self.slika setImage:[UIImage imageNamed:self.dog.slika]];
 

@@ -11,6 +11,8 @@
 @property IBOutlet UILabel *majka;
 @property IBOutlet UILabel *titula;
 @property IBOutlet UIImageView* slika;
+@property IBOutlet UILabel *tezina;
+
 
 
 

@@ -10,7 +10,7 @@
 @property NSString* otac;
 @property NSString* titula;
 @property NSString* slika;
-
+@property NSString* tezina;
 
 
 @end

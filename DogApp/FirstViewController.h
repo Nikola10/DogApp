@@ -1,11 +1,11 @@
 
+
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIScrollView<UITableViewDataSource, UITableViewDelegate>
+@interface FirstViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-@property IBOutlet UITableView * table;
-
-@property NSMutableArray * dogs;
+@property IBOutlet UITableView* table;
+@property NSMutableArray* dogs;
 
 
 @end

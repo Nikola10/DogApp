@@ -4,8 +4,6 @@
 
 @interface DogCell : UITableViewCell
 
-
 @property IBOutlet UILabel* breed;
-
-
+@property IBOutlet UIImageView* slika;
 @end

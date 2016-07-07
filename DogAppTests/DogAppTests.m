@@ -2,11 +2,10 @@
 //  DogAppTests.m
 //  DogAppTests
 //
-//  Created by pgs on 6/19/16.
-//  Copyright (c) 2016 com.nikola. All rights reserved.
+//  Created by Petar Cenic on 6/19/16.
+//  Copyright © 2016 Petar Cenic. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
 @interface DogAppTests : XCTestCase
@@ -27,7 +26,7 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testPerformanceExample {

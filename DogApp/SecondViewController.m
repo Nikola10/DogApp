@@ -1,5 +1,7 @@
-#import "FirstViewController.h"
+
+
 #import "SecondViewController.h"
+#import "FirstViewController.h"
 
 @interface SecondViewController ()
 
@@ -9,41 +11,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
--(void) viewWillAppear : (BOOL) animated {
+- (IBAction)back:(id)sender {
+    FirstViewController *firstVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstViewController"];
+    [self presentViewController:firstVC animated:YES completion:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-        
-    
     
     self.breed.text = self.dog.breed;
-    self.desc.text=  self.dog.desc;
-    
+    self.desc.text = self.dog.desc;
     self.majka.text = self.dog.majka;
     self.otac.text = self.dog.otac;
-    self.titula.text = self.dog.titula;
-    self.tezina.text = self.dog.tezina;
-   
+    self.rezultat.text = [NSString stringWithFormat:@"%@ W, %@ D, %@ L", self.dog.pobede, self.dog.porazi, self.dog.nereseno];
     
     [self.slika setImage:[UIImage imageNamed:self.dog.slika]];
-
-    
-
-    
 }
 
--(IBAction)back:(id)sender {
-    
-    FirstViewController *secondVC = [self.storyboard instantiateViewControllerWithIdentifier:
-                                      @"FirstViewController"];
-    
-    [self presentViewController:secondVC animated:YES completion:nil];
-
-}
 
 @end
